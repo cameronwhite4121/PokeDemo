@@ -6,5 +6,11 @@ namespace PokeDemo
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Properties.R
+            pictureBox2.Image = Image.FromFile("PokeDemo/sprites/firebird.png");
+        }
     }
 }
