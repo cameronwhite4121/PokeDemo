@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lblPoke1 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
@@ -39,34 +40,38 @@
             // lblPoke1
             // 
             lblPoke1.AutoSize = true;
-            lblPoke1.Location = new Point(75, 244);
+            lblPoke1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPoke1.Location = new Point(227, 309);
             lblPoke1.Name = "lblPoke1";
-            lblPoke1.Size = new Size(57, 15);
+            lblPoke1.Size = new Size(72, 20);
             lblPoke1.TabIndex = 0;
             lblPoke1.Text = "Charizard";
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(75, 273);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(47, 309);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.Size = new Size(158, 142);
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(545, 108);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(373, 69);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(100, 50);
+            pictureBox2.Size = new Size(151, 143);
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
             // 
             // lblPoke2
             // 
             lblPoke2.AutoSize = true;
-            lblPoke2.Location = new Point(545, 80);
+            lblPoke2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPoke2.Location = new Point(286, 69);
             lblPoke2.Name = "lblPoke2";
-            lblPoke2.Size = new Size(55, 15);
+            lblPoke2.Size = new Size(68, 20);
             lblPoke2.TabIndex = 3;
             lblPoke2.Text = "Venusaur";
             // 
@@ -74,14 +79,13 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(625, 450);
             Controls.Add(lblPoke2);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(lblPoke1);
             Name = "Form1";
             Text = "Poke Demo";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
