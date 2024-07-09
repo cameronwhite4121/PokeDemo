@@ -164,6 +164,7 @@
             Controls.Add(pictureBox1);
             Name = "Form1";
             Text = "Poke Demo";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
