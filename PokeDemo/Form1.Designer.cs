@@ -40,6 +40,8 @@
             button3 = new Button();
             button4 = new Button();
             groupBox1 = new GroupBox();
+            btnVolumeUp = new Button();
+            btnVolumeDown = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
@@ -150,11 +152,33 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Moves";
             // 
+            // btnVolumeUp
+            // 
+            btnVolumeUp.Location = new Point(12, 12);
+            btnVolumeUp.Name = "btnVolumeUp";
+            btnVolumeUp.Size = new Size(90, 23);
+            btnVolumeUp.TabIndex = 15;
+            btnVolumeUp.Text = "Volume Up";
+            btnVolumeUp.UseVisualStyleBackColor = true;
+            btnVolumeUp.Click += btnVolumeUp_Click;
+            // 
+            // btnVolumeDown
+            // 
+            btnVolumeDown.Location = new Point(12, 41);
+            btnVolumeDown.Name = "btnVolumeDown";
+            btnVolumeDown.Size = new Size(90, 23);
+            btnVolumeDown.TabIndex = 16;
+            btnVolumeDown.Text = "Volume Down";
+            btnVolumeDown.UseVisualStyleBackColor = true;
+            btnVolumeDown.Click += btnVolumeDown_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(625, 450);
+            Controls.Add(btnVolumeDown);
+            Controls.Add(btnVolumeUp);
             Controls.Add(groupBox1);
             Controls.Add(progressBar1);
             Controls.Add(label1);
@@ -184,5 +208,7 @@
         private Button button3;
         private Button button4;
         private GroupBox groupBox1;
+        private Button btnVolumeUp;
+        private Button btnVolumeDown;
     }
 }

@@ -23,13 +23,21 @@ namespace PokeDemo
              */
 
             output = new WaveOutEvent();
-            audio = new AudioFileReader(@"G:\CPTC Classwork\CPW 211 Advanced .Net\PokeDemo\PokeDemo\audio\FireRed & LeafGreen - Battle! Trainer Battle.mp3");
+            audio = new AudioFileReader("FireRed & LeafGreen - Battle! Trainer Battle.mp3");
             output.Init(audio);
             output.Play();
 
-            // Joe, my main concern is with file path strings, won't it ONLY work on my computer because someone else's
-            // file structure would most likely be completely different? 
+            
+        }
 
+        private void btnVolumeUp_Click(object sender, EventArgs e)
+        {
+            audio.Volume += 0.1f;
+        }
+
+        private void btnVolumeDown_Click(object sender, EventArgs e)
+        {
+            audio.Volume -= 0.1f;
         }
     }
 }
